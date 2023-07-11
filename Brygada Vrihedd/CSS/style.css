@@ -1,0 +1,120 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+     font-size: 20px;
+}
+
+body {
+     
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav{
+     display: flex; /* or inline-flex */
+     justify-content: space-between;
+     height: 100px;
+     width: 100%;
+     border: 1px solid rgb(47, 213, 242);
+     color: white;
+     border-radius: 50px;
+}
+
+nav li{
+     display: inline-block;
+     border: white 1px solid;
+     padding: 1em 2em;
+     border-radius: 50%;
+}
+li a{
+     color: white;
+}
+
+ul{
+     padding-right: 1rem;
+}
+
+a:hover{
+     color:rgb(68, 177, 227);
+}
+
+.logo-item{
+     border-radius: 50%;
+}
+.container{
+     background-image: url(../Assets/img/dark-logo.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     height: 100vw;
+     width: 100%;
+     border: rgb(148, 14, 14) 4px solid;
+}
+
+.rolling-middle{
+     width: 80%;
+     height: 1100px;
+     margin: 0 auto;
+     border:rgb(47, 213, 242) solid 1px;
+}
+
+footer{
+     height: 100px;
+     background: #6dbdee;
+     border: 1px solid black;
+     border-radius: 3px;
+    }
+
+/******************************************
+/* Fonts and paragraph styles 
+/*******************************************/
+
+h1{
+     font-family: 'Source Code Pro', monospace, sans-serif;
+     text-align: center;
+     color: white;
+     }
+     
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 800px){ 
+     .item {
+          flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+     
+     } 
+}
+/******************************************
+/* logo STYLES
+/*******************************************/
+.logocz{
+     width: 100px;
+     height: 100px;
+     border: 2px solid;
+     border-radius: 50px;
+}
+
+
+
+      
+
+     
+
